@@ -25,7 +25,6 @@ export default {
         selectComponent,
     },
     mounted() {
-        
         this.$refs.selectComponent.open(config);
     },
     methods: {
@@ -78,17 +77,33 @@ export default {
 
 
 事件：
+
 | 事件名 | 说明 | 返回值 |
-| on-submit | 选择成功后触发 | [{{ "label": "销售部", "id": "0568d964858f4a2ebbf3767f2c356503""type": 1}}] |
+| ------ | ------ | ------ |
+| on-submit | 选择成功后触发 | Array |
 | on-cancel | 取消选择后触发 | [] |
 
+
+返回值说明 ： 
+
+| key | value说明 | 
+| ------ | ------ |
+| label | 名称 |
+| id | 返回数据id |
+| type | 返回数据类型 |
+
+
 说明：
-0 : 部门 ；
-1 : 人员
-3 : 角色
-4 : 岗位
-5 : 群组
-6 : 主管
+
+| 值 | 说明 |
+| ------ | ------ |
+| 0 | 部门 |
+| 1 | 人员 |
+| 3 | 角色 |
+| 4 | 岗位 |
+| 5 | 群组 |
+| 6 | 主管 |
+
 
 
 ## 效果图
