@@ -5,7 +5,7 @@
 
 # 配置项
 
-
+安装插件
 ``` js
 //安装
 npm install mint-ui@2.2.9
@@ -21,6 +21,20 @@ Vue.use(Mint)
 import { InfiniteScroll } from 'mint-ui'
 Vue.use(InfiniteScroll)
 ```
+
+devConstGlobal.js中配置请求前缀
+``` js
+HostPrivilege: 'http://192.168.3.9:9911/privilege/',
+HostContact: 'http://192.168.3.9:9912/orgContacts/',
+``` 
+
+constGlobal.js中配置请求前缀
+``` js
+// 组织结构
+HostContact: mainHost + '/orgContacts/',
+// 权限
+HostPrivilege: mainHost + '/privilege/',
+``` 
 
 
 
