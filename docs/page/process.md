@@ -3,6 +3,27 @@
 
 组件地址 : `https://github.com/xtaymydmyd/lxComponents` ， 可下载后加入到项目中；
 
+# 配置项
+
+
+``` js
+//安装
+npm install mint-ui@2.2.9
+``` 
+
+你可以配置在`main.js` , 
+
+``` js
+/** 滚动分页***/
+import 'mint-ui/lib/style.css'
+import Mint from 'mint-ui'
+Vue.use(Mint)
+import { InfiniteScroll } from 'mint-ui'
+Vue.use(InfiniteScroll)
+```
+
+
+
 #### 功能 （单选及多选）
 - 选择人员
 - 选择部门
