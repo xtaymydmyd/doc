@@ -65,8 +65,8 @@ export default {
     methods: {
         openSelect(){
             var config = {
-                deptId : ['ee8efbe2bfbb437d9a8da1f6d12bdcfc'],
-                condition : ['org'],
+                deptId : ['0af424d6dcb511e8a3b10242ac110008'],
+                condition : ['org', 'role','charge','group' , 'post']
                 type : 2, // 1 ：默认 ,选人、选部门、角色列表、主管（配合condition） ； 2 : 只选人
                 chargeLevel : 10,
                 title : '选择成员',
@@ -104,7 +104,7 @@ export default {
 | ------ | ------ | ------ | ------ |
 | title | 弹出框标题 | String | '选择成员' |
 | deptId | 根节点id | String | 必填 |
-| condition | 表示插件提供‘组织结构’（'org'）、‘角色’(role)、‘主管’(charge) | Array | 必填 : [ 'org' , 'role' , 'charge'] |
+| condition | 表示插件提供‘组织结构’（'org'）、‘角色’(role)、‘主管’(charge)、‘群组’(group)、‘post’(岗位) | Array | 必填 : [ 'org' , 'role' , 'charge'，'group'，'post'] |
 | type | 1: 选择人、部门、角色、岗位、群组及主管，配合condition使用 ； 2 ：表示选人 | Number | 1 |
 | chargeLevel | 主管等级 | Number | 10 |
 | muliteChoice | 1 : 多选 2 : 单选 | Number | 1(多选) |
@@ -132,11 +132,11 @@ export default {
 
 | 值 | 说明 |
 | ------ | ------ |
-| 0 | 部门 |
-| 1 | 人员 |
+| 1 | 部门 |
+| 2 | 人员 |
 | 3 | 角色 |
-| 4 | 岗位 |
-| 5 | 群组 |
+| 4 | 群组 |
+| 5 | 岗位 |
 | 6 | 主管 |
 
 
@@ -147,8 +147,8 @@ export default {
 ``` js
     var config = {
         deptId : ['ee8efbe2bfbb437d9a8da1f6d12bdcfc'],
-        condition : ['org'],
-        type : 2, // 1 ：默认 ,选人、选部门、角色列表、主管（配合condition） ； 2 : 只选人
+        condition : ['role'],
+        type : 1, // 1 ：默认 ,选人、选部门、角色列表、主管（配合condition） ； 2 : 只选人
         chargeLevel : 10,
         title : '选择成员',
         muliteChoice : 2 ,//1 : 多选 2 : 单选
@@ -174,8 +174,22 @@ export default {
 ```
 ![avatar](../image/process/2.png)
 
-
 ### 效果图三： 
+``` js
+    var config = {
+        deptId : ['ee8efbe2bfbb437d9a8da1f6d12bdcfc'],
+        condition : ['group'],
+        type : 2, 
+        chargeLevel : 10,
+        title : '选择成员',
+        muliteChoice : 2 ,
+        data : []
+    }
+```
+![avatar](../image/process/5.png)
+
+
+### 效果图四： 
 ``` js
     var config = {
         deptId : ['ee8efbe2bfbb437d9a8da1f6d12bdcfc'],
@@ -190,7 +204,7 @@ export default {
 ![avatar](../image/process/3.png)
 
 
-### 效果图四： 
+### 效果图五： 
 ``` js
     var config = {
         deptId : ['ee8efbe2bfbb437d9a8da1f6d12bdcfc'],
