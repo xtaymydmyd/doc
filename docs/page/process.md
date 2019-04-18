@@ -1,4 +1,5 @@
 
+#  
 # 流程引擎选人功能
 
 组件地址 : `https://github.com/xtaymydmyd/lxComponents` ， 可下载后加入到项目中；
@@ -38,7 +39,7 @@ HostPrivilege: mainHost + '/privilege/',
 
 
 
-#### 功能 （单选及多选）
+## 模式一 —— 功能 （单选及多选）
 - 选择人员
 - 选择部门
 - 选择角色、群组、岗位
@@ -65,6 +66,7 @@ export default {
     methods: {
         openSelect(){
             var config = {
+                model : 1,
                 deptId : ['0af424d6dcb511e8a3b10242ac110008'],
                 condition : ['org', 'role','charge','group' , 'post']
                 type : 2, // 1 ：默认 ,选人、选部门、角色列表、主管（配合condition） ； 2 : 只选人
@@ -94,16 +96,67 @@ export default {
         }
     },
 }
- 
 
 ```
 
-参数： 
+## 模式二 —— 功能 （单选及多选）
+
+- 选择人员 （在指定角色中）
+
+``` html
+<select-component ref="selectComponent" @on-submit="submit" @on-cancel="cancel"></select-component>
+
+<button @click="openSelect">全部</button>
+```
+
+``` js
+
+import selectComponent from 'lechatComponent/components/selector/select.vue'
+
+export default {
+    name: 'index',
+    components:{
+        selectComponent,
+    },
+    mounted() {
+        this.$refs.selectComponent.open(config);
+    },
+    methods: {
+        openSelect(){
+            var config = {
+                model : 2,
+                roleList : ['8d092ae3629a41b0a3e9aa0a6b831053'],
+                title : '在某角色下选择人员',
+                muliteChoice : 2 ,//1 : 多选 2 : 单选
+                data : [
+                    {
+                        "label": "第2级主管",
+                        "id": "charge1",
+                        "type": 6
+                    }
+                ]
+            }
+            this.$refs.selectComponent.open(config);
+        },
+        submit(result){
+            console.log(result)
+        },
+        cancel(result){
+            console.log(result)
+        }
+    },
+}
+
+```
+
+# API
 
 | 属性 | 说明 | 类型 | 默认值 |
 | ------ | ------ | ------ | ------ |
+| <font color="red">model</font> | <font color="red">模式选择</font>  | Number | 默认值为 1 ， 分别有 1 和 2 |
 | title | 弹出框标题 | String | '选择成员' |
-| deptId | 根节点id | String | 必填 |
+| deptId | 根节点id , model = 1时，deptId必填 | Array | 必填 |
+| roleList | 角色id , model = 2时，roleList必填 | Array | 必填 |
 | condition | 表示插件提供‘组织结构’（'org'）、‘角色’(role)、‘主管’(charge)、‘群组’(group)、‘post’(岗位) | Array | 必填 : [ 'org' , 'role' , 'charge'，'group'，'post'] |
 | type | 1: 选择人、部门、角色、岗位、群组及主管，配合condition使用 ； 2 ：表示选人 | Number | 1 |
 | chargeLevel | 主管等级 | Number | 10 |
@@ -111,7 +164,7 @@ export default {
 | data | 默认已选人员 | Array | [] |
 
 
-事件：
+# Events
 
 | 事件名 | 说明 | 返回值 |
 | ------ | ------ | ------ |
@@ -119,7 +172,8 @@ export default {
 | on-cancel | 取消选择后触发 | [] |
 
 
-返回值说明 ： 
+# 返回值说明 
+
 
 | key | value说明 | 
 | ------ | ------ |
@@ -141,7 +195,7 @@ export default {
 
 
 
-## 效果图
+# 效果图
 
 ### 效果图一：
 ``` js
