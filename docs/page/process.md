@@ -73,6 +73,7 @@ export default {
                 chargeLevel : 10,
                 title : '选择成员',
                 muliteChoice : 2 ,//1 : 多选 2 : 单选
+                require : 1,
                 data : [
                     {
                         "label": "第2级主管",
@@ -128,6 +129,7 @@ export default {
                 roleList : ['8d092ae3629a41b0a3e9aa0a6b831053'],
                 title : '在某角色下选择人员',
                 muliteChoice : 2 ,//1 : 多选 2 : 单选
+                require : 1,
                 data : [
                     {
                         "label": "第2级主管",
@@ -161,6 +163,7 @@ export default {
 | type | 1: 选择人、部门、角色、岗位、群组及主管，配合condition使用 ； 2 ：表示选人 | Number | 1 |
 | chargeLevel | 主管等级 | Number | 10 |
 | muliteChoice | 1 : 多选 2 : 单选 | Number | 1(多选) |
+| require | 数据是否必选 | Number | 默认值 1 ， 1 ：不必选 ； 2 ： 必选 |
 | data | 默认已选人员 | Array | [] |
 
 
