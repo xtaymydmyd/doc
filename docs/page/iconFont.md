@@ -29,24 +29,33 @@
 ```
 # 使用方式
 
-将上述下载并解压文件拷贝到 `~assets/font/`目录下；
+将上述下载并解压文件拷贝到 `static/font/`目录下；
+
+!> 请在 build - webpack.base.conf.js 中配置 
+```js
+resolve: {
+    modules: [
+        resolve('static')
+    ]
+}
+```
 
 引用方式一 ： 在`config.js`
 ```js
-import "assets/font/iconfont.css";
+import "font/iconfont.css";
 ```
 
 引用方式二 ： 在 App.vue 中加入以下代码：
 
-```js
+```css
 <style lang="css">
-    @import '~assets/font/iconfont.css';
+    @import '~font/iconfont.css';
 </style>
 ```
 
 使用方式： 
 ```html
-<i class="iconfont icon-xxx"></i>
+<i class="icon iconfont icon-xxx"></i>
 ```
 !> icon-xxx 是图标名称
 
