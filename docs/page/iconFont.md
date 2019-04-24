@@ -40,12 +40,7 @@ resolve: {
 }
 ```
 
-引用方式一 ： 在`config.js`
-```js
-import "font/iconfont.css";
-```
-
-引用方式二 ： 在 App.vue 中加入以下代码：
+引用方式 ： 在 App.vue 或 public.scss 中加入以下代码：
 
 ```css
 <style lang="css">
