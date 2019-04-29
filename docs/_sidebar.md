@@ -7,4 +7,6 @@
 - [常见问题](page/error.md)
 - [流程引擎选人插件](page/process.md)
 - [iconFont使用说明](page/iconFont.md)
+- [图片上传](page/uploadImg.md)
+- [文件上传](page/uploadFile.md)
 
