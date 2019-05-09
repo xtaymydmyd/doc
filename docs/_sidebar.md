@@ -6,7 +6,10 @@
 - [业务组件](page/components.md)
 - [常见问题](page/error.md)
 - [流程引擎选人插件](page/process.md)
+- [移动端选择人员插件](page/appSelect.md)
 - [iconFont使用说明](page/iconFont.md)
 - [图片上传](page/uploadImg.md)
 - [文件上传](page/uploadFile.md)
+- [epubjs API](page/epubAPI.md)
+
 
