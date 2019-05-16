@@ -1,7 +1,7 @@
 
 ### 移动端选择人员
 
-组件地址 : `https://github.com/xtaymydmyd/lxComponents` ， 可下载后加入到项目中；
+组件地址 : `https://github.com/xtaymydmyd/lxComponents/tree/master/App` ， 可下载后加入到项目中；
 
 ## Install
 
@@ -14,11 +14,11 @@ npm install iview@2.12.0
 
 ## Usage
 
-在apps下增加 select(选择人员) 文件夹
+在apps下增加 selector(选择人员) 文件夹 (作为单个项目)
 
 ```vue
 <script>
-    import selectMethod from 'select/assets/js/select.js'
+    import selectMethod from 'selector/assets/js/select.js'
     export default {
         data () {
             return {
@@ -32,7 +32,6 @@ npm install iview@2.12.0
         },
         methods:{
             selectStaff(type){
-
                 var param = { 
                     deptId : '1',//父部门id 
                     deptIdList : [{
