@@ -59,6 +59,41 @@ npm install iview@2.12.0
 </script>
 ```
 
+## Usage
+
+选择部门
+
+```vue
+<script>
+    import selectMethod from 'selector/assets/js/select.js'
+    export default {
+        data () {
+            return {
+                
+            }
+        },
+        mounted:function () {
+            if(selectMethod.isFromSelectStaff()){
+                console.log(selectMethod.getResult())
+            }
+        },
+        methods:{
+            selectStaff(type){
+                var param = { 
+                    title : '选择部门',
+                    withUser : 2,
+                    userTypeIdList : [], 
+                    deptId : '082ca649198a48aa958bbc406c2dcfda',
+                    muliteChoice : 1,
+                    condition : ['depart'],
+                }
+                selectMethod.toSelect(param);  
+            }
+        }
+    }
+</script>
+```
+
 # API
 
 | 属性 | 说明 | 类型 | 默认值 |
