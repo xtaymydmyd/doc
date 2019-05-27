@@ -13,7 +13,7 @@
 npm install vux@2.7.5
 ``` 
 
-# 代码示例
+# 代码示例 - success
 ``` html
 <!-- 打开提示，提示状态为成功 -->
 <alertSuccess 
@@ -24,6 +24,38 @@ npm install vux@2.7.5
 
 <button @click="changeSuccess">打开success</button>
 
+``` 
+``` js
+<script>
+import alertSuccess from 'demo/components/alert/alert-success.vue'
+export default {
+    name: 'app',
+    data() {
+        return {
+            timeout : 2,
+            success : false,
+            text : '操作成功',
+            hideOnBlur : true,
+        }
+    },
+    components: {
+        alertSuccess,
+    },
+    methods: {
+        changeSuccess(){
+            this.success = true;
+        },
+    },
+}
+</script>
+``` 
+
+### 效果图一：
+![avatar](../image/alert/success.png)
+
+# 代码示例 - error
+
+``` html
 <!-- 打开提示，提示状态为失败/出错 -->
 <alertError
     v-model="error"
@@ -33,6 +65,38 @@ npm install vux@2.7.5
 
 <button @click="changeError">打开error</button>
 
+``` 
+``` js
+<script>
+import alertError from 'demo/components/alert/alert-error.vue'
+export default {
+    name: 'app',
+    data() {
+        return {
+            timeout : 2,
+            hideOnBlur : true,
+            error : false,
+            errorText : '操作失败',
+        }
+    },
+    components: {
+        alertError,
+    },
+    methods: {
+        changeError(){
+            this.error = true;
+        },
+    },
+}
+</script>
+``` 
+### 效果图一：
+![avatar](../image/alert/error.jpeg)
+
+
+# 代码示例 - warning
+
+``` html
 <!-- 打开提示，提示状态为警告 -->
 <alertWarning 
     v-model="warning"
@@ -41,44 +105,24 @@ npm install vux@2.7.5
     @on-hide="warning = false"></alertWarning>
 
 <button @click="changeWarning">打开warning</button>
-
-
 ``` 
 ``` js
 <script>
-import alertSuccess from 'demo/components/alert/alert-success.vue'
-import alertError from 'demo/components/alert/alert-error.vue'
 import alertWarning from 'demo/components/alert/alert-warning.vue'
 export default {
     name: 'app',
     data() {
         return {
             timeout : 2,
-            success : false,
-            text : '操作成功',
             hideOnBlur : true,
-            error : false,
-            errorText : '操作失败',
             warning : false,
             warningText : "警告"
         }
     },
     components: {
-        alertSuccess,
-        alertError,
         alertWarning
     },
-    
-    mounted: function () {
-
-    },
     methods: {
-        changeSuccess(){
-            this.success = true;
-        },
-        changeError(){
-            this.error = true;
-        },
         changeWarning(){
             this.warning = true;
         }
@@ -86,7 +130,8 @@ export default {
 }
 </script>
 ``` 
-
+### 效果图一：
+![avatar](../image/alert/warning.png)
 
 # API
 
@@ -96,3 +141,10 @@ export default {
 | text | 提示文字 | String | 相关对应文字为：‘操作成功’ 、‘操作失败’、‘警告’ |
 | hideOnBlur | 是否点击遮罩时自动关闭弹窗 | Boolean | false |
 | timeout | 延迟自动关闭提示 | Number | 0 |
+
+# Events
+
+| 事件名 | 说明 | 返回值 |
+| ------ | ------ | ------ |
+| on-hide | 提示关闭 |  |
+
