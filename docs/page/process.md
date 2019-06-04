@@ -160,7 +160,7 @@ export default {
 | deptList | 根节点id , model = 1时，deptList必填 | Array | 必填,例如：['1','2'] |
 | roleList | 角色id , model = 2时，roleList必填 | Array | 必填,例如：['role1','role2'] |
 | condition | 表示插件提供‘组织结构’（'org'）、‘角色’(role)、‘主管’(charge)、‘群组’(group)、‘post’(岗位) | Array | 必填 : [ 'org' , 'role' , 'charge'，'group'，'post'] |
-| type | 1: 选择人、部门、角色、岗位、群组及主管，配合condition使用 ； 2 ：表示选人 | Number | 1 |
+| type | 1: 选择人、部门、角色、岗位、群组及主管，配合condition使用 ； 2 ：表示选人 ; 3 : 表示选择人及群组及群组下的人| Number | 1 |
 | chargeLevel | 主管等级 | Number | 10 |
 | muliteChoice | 1 : 多选 2 : 单选 | Number | 1(多选) |
 | require | 数据是否必选 | Number | 默认值 1 ， 1 ：不必选 ； 2 ： 必选 |
