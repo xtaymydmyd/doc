@@ -67,7 +67,7 @@ export default {
         openSelect(){
             var config = {
                 model : 1,
-                deptId : ['0af424d6dcb511e8a3b10242ac110008'],
+                deptList : ['0af424d6dcb511e8a3b10242ac110008'],
                 condition : ['org', 'role','charge','group' , 'post']
                 type : 2, // 1 ：默认 ,选人、选部门、角色列表、主管（配合condition） ； 2 : 只选人
                 chargeLevel : 10,
@@ -157,8 +157,8 @@ export default {
 | ------ | ------ | ------ | ------ |
 | <font color="red">model</font> | <font color="red">模式选择</font>  | Number | 默认值为 1 ， 分别有 1 和 2 |
 | title | 弹出框标题 | String | '选择成员' |
-| deptId | 根节点id , model = 1时，deptId必填 | Array | 必填 |
-| roleList | 角色id , model = 2时，roleList必填 | Array | 必填 |
+| deptList | 根节点id , model = 1时，deptList必填 | Array | 必填,例如：['1','2'] |
+| roleList | 角色id , model = 2时，roleList必填 | Array | 必填,例如：['role1','role2'] |
 | condition | 表示插件提供‘组织结构’（'org'）、‘角色’(role)、‘主管’(charge)、‘群组’(group)、‘post’(岗位) | Array | 必填 : [ 'org' , 'role' , 'charge'，'group'，'post'] |
 | type | 1: 选择人、部门、角色、岗位、群组及主管，配合condition使用 ； 2 ：表示选人 | Number | 1 |
 | chargeLevel | 主管等级 | Number | 10 |
@@ -173,6 +173,7 @@ export default {
 | ------ | ------ | ------ |
 | on-submit | 选择成功后触发 | Array |
 | on-cancel | 取消选择后触发 | [] |
+| on-delete | 删除一条数据后触发 | Object |
 
 
 # 返回值说明 
@@ -203,7 +204,7 @@ export default {
 ### 效果图一：
 ``` js
     var config = {
-        deptId : ['ee8efbe2bfbb437d9a8da1f6d12bdcfc'],
+        deptList : ['ee8efbe2bfbb437d9a8da1f6d12bdcfc'],
         condition : ['role'],
         type : 1, // 1 ：默认 ,选人、选部门、角色列表、主管（配合condition） ； 2 : 只选人
         chargeLevel : 10,
@@ -220,7 +221,7 @@ export default {
 ### 效果图二： 
 ``` js
     var config = {
-        deptId : ['ee8efbe2bfbb437d9a8da1f6d12bdcfc'],
+        deptList : ['ee8efbe2bfbb437d9a8da1f6d12bdcfc'],
         condition : ['role'],
         type : 2, 
         chargeLevel : 10,
@@ -234,7 +235,7 @@ export default {
 ### 效果图三： 
 ``` js
     var config = {
-        deptId : ['ee8efbe2bfbb437d9a8da1f6d12bdcfc'],
+        deptList : ['ee8efbe2bfbb437d9a8da1f6d12bdcfc'],
         condition : ['group'],
         type : 2, 
         chargeLevel : 10,
@@ -249,7 +250,7 @@ export default {
 ### 效果图四： 
 ``` js
     var config = {
-        deptId : ['ee8efbe2bfbb437d9a8da1f6d12bdcfc'],
+        deptList : ['ee8efbe2bfbb437d9a8da1f6d12bdcfc'],
         condition : ['charge'],
         type : 2, 
         chargeLevel : 10,
@@ -264,7 +265,7 @@ export default {
 ### 效果图五： 
 ``` js
     var config = {
-        deptId : ['ee8efbe2bfbb437d9a8da1f6d12bdcfc'],
+        deptList : ['ee8efbe2bfbb437d9a8da1f6d12bdcfc'],
         condition : ['org','role','charge'],
         type : 2, 
         chargeLevel : 10,
