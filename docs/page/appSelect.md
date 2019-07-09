@@ -9,7 +9,7 @@
 
 npm 安装:
 ```
-npm install iview@2.12.0
+"vux": "2.9.2"
 ```
 
 ## Usage

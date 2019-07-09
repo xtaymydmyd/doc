@@ -13,5 +13,6 @@
 - [epubjs API](page/epubAPI.md)
 - [提示插件](page/alert.md)
 - [常见问题-Front](page/question.md)
+- [app版本更新（含热更新）](page/appVersion.md)
 
 
