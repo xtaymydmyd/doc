@@ -5,7 +5,7 @@
 
 ## Install
 
-### Install iView 
+### Install VUX 
 
 npm 安装:
 ```
