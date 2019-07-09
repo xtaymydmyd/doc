@@ -136,3 +136,14 @@ npm 安装:
 | 3 | 群组 |
 | 2 | 岗位 |
 
+# 请求变量
+
+devConstGlobal.js
+```js
+HostStaffOrg: 'http://192.168.108.104:9818/staffOrg/'
+```
+
+constGlobal.js
+```js
+HostStaffOrg: mainHost + '/staffOrg/',
+```
