@@ -14,5 +14,7 @@
 - [提示插件](page/alert.md)
 - [常见问题-Front](page/question.md)
 - [app版本更新（含热更新）](page/appVersion.md)
+- [启动任意多个项目配置](page/config.md)
+- [手机端REM布局](page/rem.md)
 
 
