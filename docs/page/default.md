@@ -29,16 +29,11 @@ Vue.use(defaultTip)
 ```
 ### 效果图：
 
-<img src="../image/default/content.png" width="30%" />
+![avatar](../image/default/content.png)
 
 
 ### 其他效果图
-<img src="../image/default/dynamic.png" width="30%" />
-<img src="../image/default/error.png" width="30%" />
-<img src="../image/default/friend.png" width="30%" />
-<img src="../image/default/network.png" width="30%" />
-<img src="../image/default/search.png" width="30%" />
-<img src="../image/default/star.png" width="30%" />
+![avatar](../image/default/default.png)
 
 
 # API
