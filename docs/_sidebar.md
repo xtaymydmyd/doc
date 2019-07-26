@@ -18,5 +18,6 @@
 - [手机端REM布局](page/rem.md)
 - [H5支付](page/h5Pay.md)
 - [外链跳转中转](page/outLinkRouter.md)
+- [缺省页面](page/default.md)
 
 
