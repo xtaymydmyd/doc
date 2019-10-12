@@ -1,6 +1,7 @@
 
 - [开始](page/start.md)
 - [管理端框架说明](page/admin/index.md)
+    - [模板目录](page/admin/menu.md) 
     - [模板框架](page/admin/frame.md) 
     - [框架配置](page/admin/configuration.md)
     - [布局组件](page/admin/component_layout.md)

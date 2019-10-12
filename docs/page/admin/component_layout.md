@@ -35,4 +35,4 @@ layoutContainer slot：
 
 
 效果图一：
-![avatar](../image/layoutContainer.png)
+![avatar](../../image/layoutContainer.png)
