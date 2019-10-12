@@ -68,10 +68,10 @@
 
 # 图片展示（模板一）
 效果图一：
-![avatar](../image/template1.png)
+![avatar](../../image/template1.png)
 
 效果图二（菜单收缩）
-![avatar](../image/template1-1.png)
+![avatar](../../image/template1-1.png)
 
 
 # 框架模板二
@@ -106,8 +106,8 @@
 ```
 
 # 图片展示（模板二）
-![avatar](../image/template2.png)
-![avatar](../image/template3.png)
+![avatar](../../image/template2.png)
+![avatar](../../image/template3.png)
 
 
 # 框架模板三 
@@ -145,7 +145,7 @@
 ```
 
 # 图片展示（模板三）
-![avatar](../image/template4-2.png)
-![avatar](../image/template4-1.png)
+![avatar](../../image/template4-2.png)
+![avatar](../../image/template4-1.png)
 
 

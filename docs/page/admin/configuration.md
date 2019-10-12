@@ -120,16 +120,6 @@
 ```
 
 
- 
-# 状态管理器 store
-
-文件指向 `@/assets/js/store`目录下，模板框架中使用vuex来保存数据，`modules`包括两个 `app` 和 `info`
-
-- app   包含模板中的配置信息或数据信息，包括  `breadCrumbList`(面包屑)、`tagNavList`（动态标签）、`local`（语言)等
-
-- info   包含模板中的 `moduleList`（模块数据）、`menuList`（菜单数据）、`frontConfig`（配置数据）
-
-
 # locale
 模板架中使用`languge`组件来切换语言,在 `@/assets/locale`中配置语言显示的内容，目录包括:
 ``` bash
@@ -139,7 +129,7 @@
     -| zh-TW.js
 ```
 
-项目中也需要配置语言内容，便如`lechat/locale`目录包括:
+项目中也需要配置语言内容，例如`lechat/locale`目录包括:
 ```bash
 -| locale
     -| lang
@@ -165,14 +155,12 @@ import customEnUs from 'lechat/locale/lang/en-US'
 
 文件指向 `@/config/index.js`,分别有几项配置:
 
-- frontName   : 用于获取框架基本配置，调用后台接口;
+- frontName   : 项目名称 - 用于获取配置文件，例如 `njust` ;
 - version     : 框架版本号;
-- title       : 框架名称;
+- title       : 项目默认名称;
 - mode        : 模块模式；
 mode = 1 表示左侧菜单是根据登录人员权限获取的菜单显示，不需要根据模块选择；mode = 2 表示左侧菜单根据模块展示；
 - useI18n     : 是否使用国际化，默认为false
-- fullscreen  : 是否需要放大
-- guide       : 是否需要引导功能
 
 
 
