@@ -118,7 +118,38 @@
     component: () => import('@/components/views/error-page/404.vue')
 }
 ```
+## 内嵌外链
 
+路由指向`_c/views/frame`目录下：
+
+数据库配置如下 ： uri  : `项目名.html#/frame?url=http://www.baidu.com&title=百度`
+
+```js
+{
+    path: '/',
+    name: '_frame',
+    redirect: '/frame',
+    component: Main,
+    meta: {
+        hideInMenu: true,
+        notCache: true,
+        hideInTagNav: true,
+        icon: 'md-cube'
+    },
+    children: [
+        {
+            path: '/frame',
+            name: 'frame',
+            meta: {
+                hideInMenu: true,
+                title: '',
+                icon: 'md-cube'
+            },
+            component: () => import('_c/Views/frame/index.vue')
+        }
+    ]
+}
+```
 
 # locale
 模板架中使用`languge`组件来切换语言,在 `@/assets/locale`中配置语言显示的内容，目录包括:
