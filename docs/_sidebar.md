@@ -22,5 +22,6 @@
 - [外链跳转中转](page/outLinkRouter.md)
 - [缺省页面](page/default.md)
 - [南理工](page/njustEdit.md)
+- [小程序](page/applet.md)
 
 
