@@ -24,3 +24,6 @@ lechat-iview-admin目录结构如下：
 为了设置管理端模板， 需要引入`template`,即在项目route中设置`Main`,也可以自定义模板，将自定的模板放在template目录下编辑引用
 
 !> 模板统一在`templte`目录下
+
+# router
+路由如果是按需加载的情况，打包会在`dist`目录下出现 `【id】【hash】.js`文件，按需加载一个路由，打包后就会出现一个文件
