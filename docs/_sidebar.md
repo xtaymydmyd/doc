@@ -23,5 +23,6 @@
 - [缺省页面](page/default.md)
 - [南理工](page/njustEdit.md)
 - [小程序](page/applet.md)
+- [vueTools使用](page/vueTools.md)
 
 
