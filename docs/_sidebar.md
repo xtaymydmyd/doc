@@ -24,5 +24,7 @@
 - [南理工](page/njustEdit.md)
 - [小程序](page/applet.md)
 - [vueTools使用](page/vueTools.md)
+- [Render函数](page/render.md)
+- [Mock配置与使用](page/mock.md)
 
 
