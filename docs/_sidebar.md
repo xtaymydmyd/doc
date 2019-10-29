@@ -27,5 +27,32 @@
 - [vueTools使用](page/vueTools.md)
 - [Render函数](page/render.md)
 - [Mock配置与使用](page/mock.md)
+- [全局注册组件](page/publicComponent.md)
+
+- Vue组件精讲
+    - [基础：Vue.js 组件的三个 API：prop、event、slot](page/vue/base.md)
+    - [开篇：Vue.js 的精髓——组件](page/vue/1.md)
+    - [组件的通信 1：provide   inject](page/vue/2.md)
+    - [组件的通信 2：派发与广播——自行实现 dispatch 和 broadcast 方法](page/vue/3.md)
+    - [组件的通信 3：找到任意组件实例——findComponents系列方法](page/vue/4.md)
+    - [递归组件与动态组件](page/vue/5.md)
+    - [更灵活的组件：Render 函数与 Functional Render](page/vue/6.md)
+    - [Vue 的构造器——extend 与手动挂载——$mount](page/vue/7.md)
+    
+    - [实战 1：具有数据校验功能的表单组件——Form](page/vue/8.md)
+    - [实战 2：组合多选框组件——CheckboxGroup & Checkbox](page/vue/9.md)
+    - [实战 3：动态渲染 .vue 文件的组件—— Display](page/vue/10.md)
+    - [实战 4：全局提示组件——$Alert](page/vue/11.md)
+    - [实战 5：可用 Render 自定义列的表格组件——Table](page/vue/12.md)
+    - [实战 6：可用 slot-scope 自定义列的表格组件——Table](page/vue/13.md)
+    - [实战 7：树形控件——Tree](page/vue/14.md)
+    - [拓展：如何做好一个开源项目（上篇）](page/vue/15.md)
+    - [拓展：如何做好一个开源项目（下篇）](page/vue/16.md)
+    - [拓展：Vue.js 面试、常见问题答疑](page/vue/17.md)
+    - [拓展：Vue.js 容易忽略的 API 详解](page/vue/18.md)
+    - [写在最后](page/vue/写在最后.md)
+
+
+
 
 
