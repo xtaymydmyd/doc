@@ -39,8 +39,6 @@
     - [组件的通信 3：找到任意组件实例——findComponents系列方法](page/vue/4.md)
     - [递归组件与动态组件](page/vue/5.md)
     - [更灵活的组件：Render 函数与 Functional Render](page/vue/6.md)
-  
-    
     - [实战 1：具有数据校验功能的表单组件——Form](page/vue/8.md)
     - [实战 2：组合多选框组件——CheckboxGroup & Checkbox](page/vue/9.md)
     - [Vue 的构造器——extend 与手动挂载——$mount](page/vue/7.md)
