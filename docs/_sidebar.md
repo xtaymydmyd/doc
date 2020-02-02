@@ -14,6 +14,8 @@
     - [流程引擎选人插件](page/process.md)
     - [iconFont使用说明](page/iconFont.md)
     - [移动端选择人员插件(流擎引擎)](page/appSelect.md)
+- 微信JS-SDK说明
+    - [获取地理位置](page/jssdk/location.md)
 - [常见问题](page/error.md)
 - [epubjs API](page/epubAPI.md)
 - [提示插件](page/alert.md)
