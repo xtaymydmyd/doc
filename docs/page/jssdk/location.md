@@ -25,7 +25,7 @@
 
 ```js
 querySignature() {
-    var url = 'http://pay.lordar.com:18096/api/v2/appActivity/signature'
+    var url = 'http://demo.lordar.com:18096/api/v2/appActivity/signature'
     http.apiPost(url, { url: window.location.href }).then(res => {
         if (res.status == 0) {
             // 签名成功后
@@ -88,7 +88,7 @@ parent.wx.getLocation({
 
 ```js
 querySignature() {
-    var url = 'http://pay.lordar.com:18096/api/v2/appActivity/signature'
+    var url = 'http://demo.lordar.com:18096/api/v2/appActivity/signature'
     http.apiPost(url, { url: window.location.href }).then(res => {
         if (res.status == 0) {
             var signatureParams = res.data
