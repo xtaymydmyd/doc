@@ -81,7 +81,7 @@
 }
 ```
 
-## 发起人自选
+## 发起人自己
 ``` json
 {
     "approveType": "target_originator",
