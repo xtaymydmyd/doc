@@ -63,7 +63,7 @@
 {
     "approveType": "target_select",
     "approve": {
-        "multi": 1,
+        "multiType": "single",
         "rangeType": "approvals",
         "approvals": [{
             "value": "XXX主管",
@@ -131,7 +131,7 @@
 | approveType | 类型 | 1: 指定成员、2: 主管、3:角色、4:发起人自选、5:发起人自己、6:连续多级主管 | 1 |
 | level | 发起人的“N”级主管 | 1 ~ 20级主管 | 1 |
 | autoUp | 找不到主管时，审批流程 | true: 由上级主管代审批；false: 不需要上级主管代审批 | true |
-| multi | 自选个数 | 1: 自选一人；2: 自选多人 | 1 |
+| multiType | 自选个数 | single: 自选一人；multiplayer: 自选多人 | 1 |
 | range | 自选选择范围 | allStaff:从所有人中选 approvals:从指定成员中选 role:指定角色 | allStaff |
 | endAtType | 审批终点：指定角色或指定通讯地录中N级主管 | role_and_manage：指定角色 manage：通讯录中N及主管 | 1 |
 | deptDepthFlag | 是否”同时不起过发起人向上的N级主管“ | true 或 false | false |
