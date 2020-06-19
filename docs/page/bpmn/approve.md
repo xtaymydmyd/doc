@@ -16,7 +16,7 @@
         "turnDownMethod": "return",
         "turnDownId": "",
     },
-    "deadline": ""
+    "dueDate": ""
 }
 ```
 
@@ -34,7 +34,7 @@
         "turnDownId": "",
     },
     "noneActionerAction": "auto",
-    "deadline": ""
+    "dueDate": ""
 }
 ```
 
@@ -55,7 +55,7 @@
         "turnDownId": "",
     },
     "noneActionerAction": "auto",
-    "deadline": ""
+    "dueDate": ""
 }
 ```
 ## 发起人自选
@@ -77,7 +77,7 @@
         "turnDownId": "",
     },
     "noneActionerAction": "auto",
-    "deadline": ""
+    "dueDate": ""
 }
 ```
 
@@ -92,7 +92,7 @@
         "turnDownId": "",
     },
     "noneActionerAction": "auto",
-    "deadline": ""
+    "dueDate": ""
 }
 ```
 
@@ -119,7 +119,7 @@
         "turnDownId": "",
     },
     "noneActionerAction": "auto",
-    "deadline": ""
+    "dueDate": ""
 }
 ```
 
@@ -138,7 +138,7 @@
 | deptDepth | 不超过的第n级主管 endAtType=1生效 | 1 ~ 20级主管 |  |
 | turnDownMethod | 驳回方式 | return: 原路驳回 ， node: 选择某个节点驳回 | return |
 | turnDownId | 驳回节点ID | 驳回节点Id |  |
-| deadline | 期限设置 | 审批期限设置 |  |
+| dueDate | 期限设置 | 审批期限设置 |  |
 | supInAddresslist | 通讯录中的第几级级主管 endAtType=2生效 | 1 ~ 20级主管 |  |
 | actType | 审批方式 | ONE_BY_ONE：依次审批；AND：会签（须所审批人同意）；OR: 或签（一名审批人同意或拒绝即可） | auto |
 | noneActionerAction | 审批人为空时 | auto: 自动通过；admin: 自动转交给管理员 | auto |
