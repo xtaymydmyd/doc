@@ -40,6 +40,8 @@
     - [粗略风格](page/bpmn/sketch.md)
     - [审批人定义](page/bpmn/json.md)
     - [模型扩展-JSON](page/bpmn/package.md)
+- DP在线
+    - [插件使用](page/dp/plugin.md)
 - Vue组件精讲
     - [基础：Vue.js 组件的三个 API：prop、event、slot](page/vue/base.md)
     - [开篇：Vue.js 的精髓——组件](page/vue/1.md)
