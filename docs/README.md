@@ -1,3 +1,3 @@
-## Welcome
+## 欢迎
 
-![](../image/backgroundImage.jpeg)
+![](../image/backgroundImage.jpg)

@@ -1,1 +1,1 @@
-![](../image/backgroundImage.jpeg)
+![](../image/backgroundImage.jpg)

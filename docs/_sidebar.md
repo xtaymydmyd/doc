@@ -34,6 +34,9 @@
 - [Render函数](page/render.md)
 - [Mock配置与使用](page/mock.md)
 - [全局注册组件](page/publicComponent.md)
+- 表单定义
+    - [基础组件](page/form.md) 
+    - [套件组件](page/widget.md)
 - BPMN使用
     - [BPMN基本使用](page/bpmn/index.md)
     - [自定义建模器](page/bpmn/customModule.md)

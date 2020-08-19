@@ -1,5 +1,5 @@
 <!-- background image -->
-![](../image/backgroundImage.jpeg)
+![](../image/backgroundImage.jpg)
 
 
 [VUE组件精讲](page/vue/base.md)
