@@ -34,6 +34,7 @@
 - [Render函数](page/render.md)
 - [Mock配置与使用](page/mock.md)
 - [全局注册组件](page/publicComponent.md)
+- [vue-draggable深浅拷贝](page/vuedraggable.md)
 - 表单定义
     - [基础组件](page/form.md) 
     - [套件组件](page/widget.md)
