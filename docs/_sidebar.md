@@ -67,8 +67,8 @@
     - [拓展：Vue.js 面试、常见问题答疑](page/vue/17.md)
     - [拓展：Vue.js 容易忽略的 API 详解](page/vue/18.md)
     - [写在最后](page/vue/写在最后.md)
-
-
+- [自检清单](page/selfCheck.md)
+- [大屏](page/visual/index.md)
 
 
 
