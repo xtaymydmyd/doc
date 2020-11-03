@@ -37,13 +37,72 @@ bridge.camera(option, function(data){
 
 成功返回数据如下：
 ```json
-{
-    "image": "base64位图片字符串",
-    "msg": "拍照",
-}
+"base64位图片字符串"
 ```
 
-### option参数如下
+#### option参数如下
+
+| 属性 | 名称 | 说明 | 默认 | 
+| ------ | ------ | ------ | ------ | 
+| size | 图片大小 | 以K为单位，例如 size=100 表示图片大小为100K | 无 |
+
+
+## 相册中选择
+```js
+var dd = {};
+option.size = "200"; // 图片大小
+bridge.pickPhoto(option, function(data){
+    console.log(data)
+}, function(error){
+    console.log(data)
+});
+```
+
+成功返回数据如下：
+```json
+"base64位图片字符串"
+```
+
+#### option参数如下
+
+| 属性 | 名称 | 说明 | 默认 | 
+| ------ | ------ | ------ | ------ | 
+| size | 图片大小 | 以K为单位，例如 size=100 表示图片大小为100K | 无 |
+
+
+
+## 添加水印
+```js
+let option = {
+    photo: 'data:image/jpg;base64 XXXXXX‘,
+    watermarks: [
+        [{
+            "name":"门店名称:测试门店"
+        }],[{
+            "name":"门店Code:code"
+        },{
+            "name":"拍摄时间:2020-07-15"
+        }],[{
+            "name":"门店Code:code"
+        },{
+            "name":"拍摄时间:2020-07-15"
+        }]
+    ]
+}
+bridge.watermark(option, function(data) {
+    // console.log(data)
+    successCallback(data)
+}, function(error) {
+    errorCallback(error)
+})
+```
+
+成功返回数据如下：
+```json
+"base64位图片字符串"
+```
+
+#### option参数如下
 
 | 属性 | 名称 | 说明 | 默认 | 
 | ------ | ------ | ------ | ------ | 
