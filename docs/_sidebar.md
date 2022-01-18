@@ -1,5 +1,6 @@
 
 - [开始](page/start.md)
+- [package.json解析](page/package.md)
 - JavaScript
     - JavaScript标准内置对象
         - [Array](page/JS/array.md)
@@ -88,6 +89,9 @@
 - [大屏](page/visual/index.md)
 - cordova
     - [问题清单](page/cordova/question.md)
+- JavaScript插件
+    - [样例](page/front/demo.md)
+    - [原生JavaScript插件编写指南](page/front/plugin.md)
 
 
 

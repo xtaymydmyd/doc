@@ -5,6 +5,7 @@
 [VUE组件精讲](page/vue/base.md)
 [流程设计器](page/bpmn/index.md)
 [Get Started](page/vue/base.md)
+[肝一个JS插件](page/front/plugin.md)
 
 
 
