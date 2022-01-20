@@ -1,10 +1,15 @@
 
 - [开始](page/start.md)
-- [package.json解析](page/package.md)
-- JavaScript
-    - JavaScript标准内置对象
-        - [Array](page/JS/array.md)
-        - [函数](page/JS/function.md)
+- [Render函数](page/render.md)
+- [异步&同步](page/async.md)
+- [package解析](page/package.md)
+- [锚点跳转实现](page/anchor/anchor.md)
+- JavaScript插件
+    - [JavaScript插件样例](page/front/demo.md)
+    - [原生JavaScript插件编写指南](page/front/plugin.md)
+- JavaScript标准内置对象
+    - [Array](page/JS/array.md)
+    - [函数](page/JS/function.md)
 - 表单设计器
     - [引用](page/form/form.md)
     - [uiSchema定义](page/form/definition.md)
@@ -39,7 +44,6 @@
 - [南理工](page/njustEdit.md)
 - [小程序](page/applet.md)
 - [vueTools使用](page/vueTools.md)
-- [Render函数](page/render.md)
 - [Mock配置与使用](page/mock.md)
 - [全局注册组件](page/publicComponent.md)
 - [vue-draggable深浅拷贝](page/vuedraggable.md)
@@ -89,9 +93,7 @@
 - [大屏](page/visual/index.md)
 - cordova
     - [问题清单](page/cordova/question.md)
-- JavaScript插件
-    - [样例](page/front/demo.md)
-    - [原生JavaScript插件编写指南](page/front/plugin.md)
+
 
 
 

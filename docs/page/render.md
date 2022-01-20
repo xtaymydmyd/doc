@@ -1,5 +1,89 @@
 # render函数 (场景：iview -> table)
 
+## render函数组成
+```text
+-| 标签名称/
+-| 标签属性/
+    -| class｜对象/
+    -| style｜对象/
+    -| attrs｜对象/
+    -| props｜对象/
+    -| on｜事件/
+    -| nativeOn｜事件/
+    -| scopedSlots
+    -| directives
+    -| slot
+    -| key
+    -| ref
+    -| refinFor
+-| 子元素数组/
+
+```
+
+### class | 对象
+```text
+class: {
+	"form_item_block": true
+}
+与 `v-bind:class` 的 API 相同，接受一个字符串、对象或字符串和对象组成的数组
+```
+
+### style｜对象
+```text
+style:{
+	fontSize: '12px'
+}
+与 `v-bind:style` 的 API 相同，接受一个字符串、对象，或对象组成的数组
+```
+
+### attrs｜对象
+```text
+attrs:{
+	id: 'form_item_123'
+}
+// 普通的 HTML attribute，会加到 BaseButton 最外层的元素上
+```
+
+### props｜对象
+```text
+props：{
+	type: 'warning';
+	size: 'large',
+}
+组件 prop，就是我们正常使用子组件时的那些 props
+```
+
+### on | 事件
+```text
+on: {
+    click: ()=> {
+
+    },
+    dblclick: ()=> {
+
+    },
+    hook:mounted: () => {
+
+    }
+}
+子组件 `$emit` 的事件才能接收到，否则在下一个属性才能监听到
+```
+### nativeOn | 事件
+```text
+仅用于组件，用于监听原生事件，而不是组件内部使用 `vm.$emit` 触发的事件
+```
+### scopedSlots
+```text
+作用域插槽的格式为：{ name: props => VNode | Array<VNode> }
+```
+### directives
+```text
+自定义指令
+```
+### slot
+```text
+如果组件是其它组件的子组件，需为插槽指定名称
+```
 ## 介绍 
 1. render方法的实质就是生成template模板； 
 2. 通过调用一个方法来生成，而这个方法是通过render方法的参数传递给它的； 
